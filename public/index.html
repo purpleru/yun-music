@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简易云音乐播放器</title>
+    <meta name="author" content="孤独的小丑" />
+</head>
+<body>
+    <div id="app">
+        <header class="music-header">
+            <div class="wrap">
+                <h1 class="logo">
+                    <a href="#"></a>
+                </h1>
+                <nav class="nav-list">
+                    <ul>
+                        <li>
+                            <a href="#">发现音乐</a>
+                        </li>
+                        <li>
+                            <a href="#">我的音乐</a>
+                        </li>
+                        <li>
+                            <a href="#">朋友</a>
+                        </li>
+                        <li>
+                            <a href="#">商城</a>
+                        </li>
+                        <li>
+                            <a href="#">音乐人</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </div>
+        </header>
+        <div class="music-body clear-float">
+            <div class="music-left">
+                <div class="play-top">
+                    <span>播放列表(<em id="count"></em>)</span>
+                </div>
+                <ul class="play-list">
+                    <!-- <li>
+                        <i class="play-icon"></i>
+                        <span class="play-list-name">冬天的秘密</span>
+                        <span class="song-time">04:30</span>
+                        <span class="play-list-singer">孤独</span>
+                        <div class="play-list-btns">
+                            <i class="btn-del"></i>
+                            <i class="btn-download"></i>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="music-right">
+                <div class="play-cover">
+                    <img src="/img/disc_default.png" alt="">
+                </div>
+                <h3 class="song-name"></h3>
+                <div id="lyric-list" data-mcs-theme="minimal">
+                    <!-- <p>暂无歌词，请欣赏美好的音乐。</p> -->
+                    <!-- <p class="active">暂无歌词，请欣赏美好的音乐。</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="player">
+            <div class="wrap clear-float">
+                <div class="btns clear-float">
+                    <a href="javascript:;" class="prev" title="上一首"></a>
+                    <a href="javascript:;" class="play" id="play" title="播放/暂停"></a>
+                    <a href="javascript:;" class="next" title="下一首"></a>
+                </div>
+                <div class="play-song-cover">
+                    <img src="/img/disc_default.png" alt="">
+                </div>
+                <div class="play-word">
+                    <div class="play-word-head">
+                        <a href="javascript:;" class="play-song-name">
+                        </a>
+                        <a href="javascript:;" class="play-song-singer">
+                        </a>
+                    </div>
+                    <div class="play-bar">
+                        <div class="play-progress">
+                            <div class="play-progress-mask">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="play-time">
+                            <span>
+                                <em>00:00</em>
+                                /
+                                00:00
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-tools">
+                    <a href="javascript:;" class="loop icon" id="mode-btn"></a>
+                    <a href="javascript:;" class="vol icon"></a>
+                    <div class="play-progress" id="vol-progress">
+                        <div class="play-progress-mask">
+                            <span></span>
+                        </div>
+                    </div>
+                    <em id="vol-tip">100</em>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio></audio>
+    <div id="bg"></div>
+    <div id="bg-mask"></div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="/js/jquery.mCustomScrollbar.js"></script>
+</body>
+</html>

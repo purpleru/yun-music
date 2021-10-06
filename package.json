@@ -1,0 +1,38 @@
+{
+  "name": "yun-music",
+  "version": "1.0.0",
+  "description": "简易云音乐播放器,它是一个模仿网易云音乐PC端简约版的音乐播放器.",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "@babel/runtime": "^7.15.4",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.6",
+    "autoprefixer": "^10.3.7",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "core-js": "^3.18.2",
+    "css-loader": "^6.3.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.3.0",
+    "postcss": "^8.3.9",
+    "postcss-loader": "^6.1.1",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.55.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack serve",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
