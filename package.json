@@ -2,7 +2,7 @@
   "name": "yun-music",
   "version": "1.0.0",
   "description": "简易云音乐播放器,它是一个模仿网易云音乐PC端简约版的音乐播放器.",
-  "main": "webpack.config.js",
+  "main": "./src/index.js",
   "dependencies": {
     "@babel/runtime": "^7.15.4",
     "jquery": "^3.6.0"

@@ -11,7 +11,7 @@ $.ajaxSetup({
 
         url = new URL(url);
 
-        url.searchParams.set('version', '2.0');
+        url.searchParams.set('version', '3.0');
 
         this.url = url.toString();
 
